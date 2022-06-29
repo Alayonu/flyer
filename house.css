@@ -1,0 +1,84 @@
+body{
+	background-image: url(pexels-photo-3113867.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+	display: flex;
+	margin: auto;
+	padding: 35px 0;
+	align-items: center;
+	justify-content: space-between;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.navbar ul li{
+	display: inline-block;
+	margin: 0 7px;
+	list-style: none;
+}
+.navbar ul li a{
+	text-decoration:none;
+	color: whitesmoke;
+	text-transform: none;
+}
+.navbar ul li a::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	bottom: -4px;
+	left: 0;
+    background-color: deeppink;
+    transition: width 0.3s;
+    display: block;
+}
+.navbar ul li a:hover::after{
+	width: 100%;
+}
+.content{
+    text-align: center;
+	color: deeppink;
+	text-align: center;
+	padding-top: 2rem;
+	
+}
+.content h1{
+	font-size: 40px;
+	margin-top: 70px;
+}
+.content p{
+	margin: 20px auto;
+}
+button{
+	width: 100px;
+	padding: 3px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 40px;
+	font-weight: bold;
+	border: 2px solid darkblue;
+	background-color: deeppink;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+button:hover{
+	border: none;
+}
+.address{
+	color: darkorchid;
+    float: right;
+    padding-right: 2rem;
+    padding-top: 6rem;
+}
+@media(max-width:768px){
+    .navbar{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
